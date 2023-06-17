@@ -5,23 +5,23 @@ export DBs
 
 echo "-------------> Welcome to My DBMS <-------------"
 
-select dbs in createdb listdb connectdb dropdb Exit
+select dbs in Create_DB List_DB Connect_DB Drop_DB Exit
 do 
 	case $dbs in 
-	"createdb" )
-		. ./createdb.sh		
+	"Create_DB" )
+		. ./create_DB.sh		
 
 	;;
-	"listdb" )
-		. ./listdb.sh	
+	"List_DB" )
+		. ./list_DB.sh	
 
 	;;
-	"connectdb" )
-		. ./connectdb.sh
+	"Connect_DB" )
+		. ./connect_DB.sh
 	
 	;;
-	"dropdb" ) 
-		. ./dropdb.sh
+	"Drop_DB" ) 
+		. ./drop_DB.sh
 
 	;;
 	"Exit" )
