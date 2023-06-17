@@ -29,6 +29,6 @@ do
 
 	;;
 	* )
-	echo "I6nvalid choice"
+	echo "Invalid choice"
 	esac 
 done	
